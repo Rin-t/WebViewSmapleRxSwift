@@ -10,16 +10,44 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="WebViewSample" customModuleProvider="target">
             <connections>
+                <outlet property="progressView" destination="kpw-DY-Wv0" id="mGu-Cw-4B8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="jAD-HY-ZsR"/>
+                <outlet property="webView" destination="k3L-gM-0kt" id="mVX-bu-rqW"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3L-gM-0kt">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kpw-DY-Wv0">
+                    <rect key="frame" x="0.0" y="88" width="414" height="4"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="Qdh-Eq-bnO"/>
+                    </constraints>
+                </progressView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="112" y="109"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="k3L-gM-0kt" secondAttribute="bottom" id="8jp-TO-m6U"/>
+                <constraint firstItem="k3L-gM-0kt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="C0F-rW-1jk"/>
+                <constraint firstItem="kpw-DY-Wv0" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="K0h-T9-2Ed"/>
+                <constraint firstItem="k3L-gM-0kt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="VxD-x3-cag"/>
+                <constraint firstItem="kpw-DY-Wv0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="a08-IY-Jm5"/>
+                <constraint firstItem="kpw-DY-Wv0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iH9-gR-grZ"/>
+                <constraint firstItem="k3L-gM-0kt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yRc-gB-pdS"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="111.59420289855073" y="108.48214285714285"/>
         </view>
     </objects>
     <resources>
