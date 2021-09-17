@@ -14,6 +14,8 @@
 		2461B5B826F48D1C009BB1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2461B5B726F48D1C009BB1AD /* Assets.xcassets */; };
 		2461B5BB26F48D1C009BB1AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2461B5B926F48D1C009BB1AD /* LaunchScreen.storyboard */; };
 		2461B5C326F48E3D009BB1AD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2461B5C226F48E3D009BB1AD /* ViewController.xib */; };
+		2461B5C726F4A794009BB1AD /* RxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2461B5C626F4A794009BB1AD /* RxViewController.xib */; };
+		2461B5C926F4A7A3009BB1AD /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2461B5C826F4A7A3009BB1AD /* RxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		2461B5BA26F48D1C009BB1AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2461B5BC26F48D1C009BB1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2461B5C226F48E3D009BB1AD /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		2461B5C626F4A794009BB1AD /* RxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxViewController.xib; sourceTree = "<group>"; };
+		2461B5C826F4A7A3009BB1AD /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
 		281CE80C7739D6E8B9CD7611 /* Pods_WebViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebViewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A80807C12282247307BE93E /* Pods-WebViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewSample.debug.xcconfig"; path = "Target Support Files/Pods-WebViewSample/Pods-WebViewSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E9D15169200A7958E8FBBB52 /* Pods-WebViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewSample.release.xcconfig"; path = "Target Support Files/Pods-WebViewSample/Pods-WebViewSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,15 +67,33 @@
 		2461B5AD26F48D19009BB1AD /* WebViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				2461B5C526F4A77B009BB1AD /* RxSwift */,
+				2461B5C426F4A763009BB1AD /* KVO */,
 				2461B5AE26F48D19009BB1AD /* AppDelegate.swift */,
 				2461B5B026F48D19009BB1AD /* SceneDelegate.swift */,
-				2461B5B226F48D19009BB1AD /* ViewController.swift */,
-				2461B5C226F48E3D009BB1AD /* ViewController.xib */,
 				2461B5B726F48D1C009BB1AD /* Assets.xcassets */,
 				2461B5B926F48D1C009BB1AD /* LaunchScreen.storyboard */,
 				2461B5BC26F48D1C009BB1AD /* Info.plist */,
 			);
 			path = WebViewSample;
+			sourceTree = "<group>";
+		};
+		2461B5C426F4A763009BB1AD /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				2461B5B226F48D19009BB1AD /* ViewController.swift */,
+				2461B5C226F48E3D009BB1AD /* ViewController.xib */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		2461B5C526F4A77B009BB1AD /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				2461B5C626F4A794009BB1AD /* RxViewController.xib */,
+				2461B5C826F4A7A3009BB1AD /* RxViewController.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		4C95D832BEEE4E3FC9961A00 /* Frameworks */ = {
@@ -152,6 +174,7 @@
 			files = (
 				2461B5BB26F48D1C009BB1AD /* LaunchScreen.storyboard in Resources */,
 				2461B5C326F48E3D009BB1AD /* ViewController.xib in Resources */,
+				2461B5C726F4A794009BB1AD /* RxViewController.xib in Resources */,
 				2461B5B826F48D1C009BB1AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +230,7 @@
 			files = (
 				2461B5B326F48D19009BB1AD /* ViewController.swift in Sources */,
 				2461B5AF26F48D19009BB1AD /* AppDelegate.swift in Sources */,
+				2461B5C926F4A7A3009BB1AD /* RxViewController.swift in Sources */,
 				2461B5B126F48D19009BB1AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
